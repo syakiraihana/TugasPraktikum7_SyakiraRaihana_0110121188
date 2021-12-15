@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum JS|Syakira Raihana</title>
+
+    <script>
+        function hitung(){
+            const satudollar = 14650; // nilai 1 dollar
+            let uang = document.getElementById("bil1").value;
+            console.log("Nilai Rupiah: " + uang);
+            let kurshasil = uang / satudollar;
+            console.log("Nilai Dollar: " + kurshasil);
+            let area_hasil = document.getElementById("hasil");
+            area_hasil.innerHTML = "$ " + kurshasil;
+        }
+    </script>
+</head>
+
+<body>
+    <h3>Menghitung Kurs Rupiah ke Dollar</h3>
+    Masukkan Nilai Uang Rupiah: 
+    <input type="number" value="" size="10" id="bil1"/>
+    <br/>
+    <button onclick="hitung()">Hitung</button>
+    <br/>Hasil : <span id="hasil"></span>
+</body>
+</html>
